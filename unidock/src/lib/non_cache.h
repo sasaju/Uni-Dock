@@ -38,7 +38,7 @@ struct non_cache : public igrid {
     std::vector<grid> get_grids() const;
     int get_atu() const;
     float get_slope() const;
-    bool within(const model& m, fl margin = 0.0001) const;
+    bool within(const model& m, fl margin = -0.0001) const;
     fl slope;
     std::vector<bias_element> bias_list;
     grid_dims get_gd() const { return gd; }
